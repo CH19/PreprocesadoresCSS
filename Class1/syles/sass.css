@@ -1,0 +1,21 @@
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#Submain {
+  display: flex;
+  width: 50vw;
+  justify-content: space-evenly;
+}
+
+.pills {
+  width: calc(auto + 50px);
+  height: auto;
+  border: 1px lightgray solid;
+  border-radius: 40%;
+  display: flex;
+  justify-content: center;
+  font-size: small;
+}
+
+/*# sourceMappingURL=sass.css.map */

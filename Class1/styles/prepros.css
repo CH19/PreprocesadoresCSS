@@ -1,0 +1,9 @@
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header > figure > img {
+  height: 80px;
+}
