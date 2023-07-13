@@ -1,0 +1,69 @@
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+#navbar {
+  display: flex;
+  align-items: center;
+}
+#navbar figure {
+  width: 100px;
+  padding: 1px;
+}
+#navbar figure img {
+  width: 100%;
+}
+#navbar #Menu {
+  width: 60%;
+}
+#navbar #Menu ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  text-decoration: none;
+  flex-direction: row;
+  font-size: small;
+}
+#navbar #Menu ul a {
+  text-decoration: none;
+  color: gray;
+}
+#navbar #Menu ul li:hover {
+  border-bottom: 2px solid aquamarine;
+}
+#navbar #Menu ul li:hover a {
+  color: aquamarine;
+}
+
+#Submain {
+  display: flex;
+  width: 50vw;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.pills {
+  width: calc(auto + 50px);
+  height: fit-content;
+  border: 1px lightgray solid;
+  border-radius: 40%;
+  display: flex;
+  justify-content: center;
+  font-size: small;
+  margin: 50px auto;
+  margin-top: 50px;
+  margin-bottom: 2px;
+}
+
+/*Hola esto es otra prueba
+Pues mira como hago*/
+div {
+  background-color: red;
+}
+
+/*# sourceMappingURL=sass.css.map */

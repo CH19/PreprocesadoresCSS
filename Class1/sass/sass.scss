@@ -1,21 +1,76 @@
 // Probando sass sin prepros 
+$fuenteColor: gray;
+$fuenteHover: aquamarine;
+$fuentePrincipal:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 *{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: $fuentePrincipal;
 }
 header{
+    display: flex;
+    
+    flex-direction: column;
 
+  }
+#navbar{
+    display: flex;
+    align-items: center;
+    & figure{
+        width: 100px;
+        padding: 1px;
+        & img{
+            width: 100%;
+        }
+    }
+    & #Menu{
+        width: 60%;
+        & ul{
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        text-decoration: none;
+        flex-direction: row;
+        font-size: small;
+        & a{
+            text-decoration: none;
+            color: $fuenteColor;
+        }
+        & li:hover{
+            border-bottom: 2px solid $fuenteHover;
+            & a{
+                color: $fuenteHover;
+            }
+        }
+        // :nth-child(3){
+        //     background-color: blueviolet;
+        // }
+
+        }
+    }
 }
 #Submain{
     display: flex;
     width: 50vw;
+    align-items: center;
     justify-content: space-evenly;
 }
 .pills{
     width: calc(auto + 50px);
-    height: auto;
-    border: 1px lightgray solid;
-    border-radius: 40%;
+    height: fit-content;
+    border: 1px lightgray solid{
+        radius: 40%;
+    }
     display: flex;
     justify-content: center;
     font-size: small;
+    margin: 50px auto{
+        top: 50px;
+        bottom: 2px;
+    }
+    
+}
+/*Hola esto es otra prueba
+Pues mira como hago*/
+div{
+    background-color: red;
+    
 }
