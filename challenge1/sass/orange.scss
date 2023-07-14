@@ -1,0 +1,74 @@
+$ImagenFondoHeader: '../Adjunto_Desafio1/imgs/img1.jpeg';
+$ImagenFooter: '../Adjunto_Desafio1/imgs/img2.jpeg';
+$font-size-navbar: 16px;
+$TextAboutImages: #fcf0f0ef;
+header{
+    width: 100vw;
+    height: 100vh;
+}
+#ContentNaranja{
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+    // object-fit: auto;
+    & img{
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+    }
+}
+#container1{
+    // & #navbar{
+    //     position: absolute;
+    //     top: 0;
+        
+    //     display: flex;
+    //     width: 90vw;
+    //     justify-content: space-between;
+    //     font-weight: bold;
+    //     font-size: $font-size-navbar;
+    //     // border: 1px solid black;
+    //     & #Pages{
+    //         width: 20%;
+    //         display: flex;
+    //         justify-content: space-around;
+    //     }
+    //     & #Logo{
+    //         color: lightgray;
+    //     }
+    // }
+    & #Presentation{
+    //    display: flex;
+    //    flex-direction: column;
+    //    justify-content: center;
+    //    align-items: center;
+    //     position: absolute;
+    //     top: 50%;
+    //     left: 50%;
+    //     transform: translate(-50%, -50%);
+    //     color: $TextAboutImages;
+    }
+
+    background: center{
+        image: url('../Adjunto_Desafio1/imgs/img1.jpeg');
+        size: cover;
+        repeat: no-repeat;
+        // attachment: fixed;
+        // position:0 0;
+        // origin:border-box;
+    }
+    width: 100%;
+    height: 100%;
+
+
+}
+
+@media screen and (max-width: 600px) {
+        #conainer1{
+
+            & #navbar{
+                font-size: calc($font-size-navbar / 2);
+            }
+        }
+    }
