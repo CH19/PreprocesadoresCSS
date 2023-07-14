@@ -22,8 +22,8 @@
             <section id="navbar" class="mx-4">
                 <div class="div" id="Logo">Logo</div>
                 <div id="Pages" class="">
-                    <span class="text-dark">Pagina1</span>
-                    <span class="text-info">Pagina1</span>
+                    <a href=""><span class="text-dark">Pagina1</span></a>
+                    <a href=""><span class="text-info">Pagina2</span></a>
                 </div>
             </section>
             <section id="Presentation">
@@ -33,31 +33,31 @@
                 <div>
                       <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis eaque hic cumque cum tenetur recusandae possimus iusto ex, rerum porro. Minima aspernatur, nemo magni illum beatae dignissimos aperiam! Veritatis, molestiae</span>
                 </div>
-                <div id="buttons"><button>Holi</button><button>Holi</button></div>
+                <div id="buttons" class="my-4"><button class="btn btn-info text-light rounded-pill fw-bold">READ MORE</button><button class="btn btn-light rounded-pill fw-bold">VIEW ALL RECIPES</button></div>
             </div>
     </div>
         </section>
     </div>
   </header>
   <main>
-    <div id="Producst">
+    <div class="container my-5" id="Producst">
       
         
     </div>    
   </main>
-  <footer>
-    <section id="Visitanos">
+  <footer class="bg-warning text-light">
+    <section class="container ms-4" id="Visitanos">
         <div>
             <h1>Healthy Evening</h1>
         </div>
         <div>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum, in mollitia, porro accusantium inventore fugit quod pariatur adipisci consequatur odit, voluptas ipsam quidem quo totam nemo alias blanditiis odio ad.
         </div>
-        <div><button class="btn btn-info">Register</button></div>
+        <div><button class="btn btn-info text-light rounded-pill mt-5">Read More</button></div>
     </section>
-    <section>
-        <figure><img src="" alt=""></figure>
-    </section>
+    <figure class="col-md-6">
+      <img src="./Adjunto_Desafio1/imgs/img2.jpeg" alt="">
+    </figure>
 </footer>
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
@@ -90,17 +90,17 @@
         const CardsEstrucutra = `
     <div class="card mb-3" style="max-width: 540px;">
   <div class="row g-0">
-    <div class="col-md-4">
+    <figure class="col-md-4">
       <img src="${img}" class="img-fluid rounded-start" alt="${title}">
-    </div>
+    </figure>
     <div class="col-md-8">
       <div class="card-body">
-        <p class="card-text"><small class="text-body-secondary">${title}</small></p>
+        <p class="card-text"><small class="text-body-secondary text-secondary">${title}</small></p>
         <h5 class="card-title">$${price}</h5>
         <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat itaque doloremque accusantium, tempore quia fugit nihil tempora minus assumendque!
 </p>
-        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-      </div>
+  <button class="btn btn-secondary">Comprar producto</button>
+</div>
     </div>
   </div>
 </div>
