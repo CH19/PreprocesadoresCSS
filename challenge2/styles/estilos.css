@@ -1,0 +1,36 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+}
+.header .Logo {
+  color: #FE7EC9;
+}
+
+.Navbar {
+  display: flex;
+  justify-content: center;
+}
+.Navbar ul {
+  list-style: none;
+  display: flex;
+  width: 70%;
+  justify-content: space-around;
+}
+.Navbar ul a {
+  text-decoration: none;
+  color: #000;
+}
+.Navbar ul a:hover {
+  color: #FE7EC9;
+}
+
+.nino-container {
+  width: 80vw;
+  height: 40vh;
+}
+.nino-container .nino {
+  background-image: url("https://media.istockphoto.com/id/1175092840/es/foto/chica-feliz-en-clase-en-la-escuela-con-un-grupo-de-estudiantes.jpg?s=612x612&w=0&k=20&c=qR8MhTDpEG53Wl7SaAOiJss_MjRNIhjFzdFfMYVwc8Y=");
+}
+
+/*# sourceMappingURL=estilos.css.map */

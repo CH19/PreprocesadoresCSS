@@ -1,0 +1,13 @@
+@import '-variables.scss';
+@import '-header.scss';
+
+// estilos main 
+.nino-container{
+    width: 80vw;
+    height: 40vh;
+    & .nino{
+        background-image: url('https://media.istockphoto.com/id/1175092840/es/foto/chica-feliz-en-clase-en-la-escuela-con-un-grupo-de-estudiantes.jpg?s=612x612&w=0&k=20&c=qR8MhTDpEG53Wl7SaAOiJss_MjRNIhjFzdFfMYVwc8Y=');
+       
+    
+    }
+}
