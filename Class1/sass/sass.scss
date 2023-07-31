@@ -2,6 +2,7 @@
 $fuenteColor: gray;
 $fuenteHover: aquamarine;
 $fuentePrincipal:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+$font: calibri;
 *{
     font-family: $fuentePrincipal;
 }
@@ -10,6 +11,18 @@ header{
     
     flex-direction: column;
 
+  }
+  body{
+    // practicando estructuras de control en sass 
+    @if($font == calibri){
+        background-color: red;
+    }@else if($font == roman){
+        background-color: blue;
+    }@else if($font == forfi){
+        background-color: green;
+    }@else{
+        background-color: black;
+    }
   }
 #navbar{
     display: flex;
