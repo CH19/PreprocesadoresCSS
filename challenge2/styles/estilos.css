@@ -1,3 +1,7 @@
+* {
+  font-size: 20px;
+}
+
 .header {
   display: flex;
   flex-direction: row;
@@ -26,11 +30,100 @@
 }
 
 .nino-container {
-  width: 80vw;
-  height: 40vh;
+  width: 20rem;
+  height: 20rem;
 }
-.nino-container .nino {
-  background-image: url("https://media.istockphoto.com/id/1175092840/es/foto/chica-feliz-en-clase-en-la-escuela-con-un-grupo-de-estudiantes.jpg?s=612x612&w=0&k=20&c=qR8MhTDpEG53Wl7SaAOiJss_MjRNIhjFzdFfMYVwc8Y=");
+.nino-container img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  box-shadow: 2rem 3rem 10px #FE7EC9, 3rem 4rem 10px #FECA02;
+}
+
+.mainsito {
+  display: flex;
+}
+
+.encabezado {
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.cuadrad, .cuadrado4, .cuadrado3, .cuadrado2 {
+  background-color: #38C4C1;
+  width: 6rem;
+  height: 6rem;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #FFF;
+  font-weight: bold;
+}
+.cuadrad ion-icon, .cuadrado4 ion-icon, .cuadrado3 ion-icon, .cuadrado2 ion-icon {
+  font-size: 30px;
+}
+.cuadrad a, .cuadrado4 a, .cuadrado3 a, .cuadrado2 a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+.cuadrado2 {
+  background-color: #FECA02;
+}
+
+.cuadrado3 {
+  background-color: #FE7EC9;
+}
+
+.cuadrado4 {
+  background-color: #488DF4;
+}
+
+.cuadrado-container {
+  display: flex;
+  position: relative;
+  left: 20rem;
+  top: -3rem;
+}
+
+footer {
+  background-color: #38C4C1;
+  color: #FFF;
+  height: 20rem;
+}
+footer .footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+footer .footer-container h1 {
+  border-bottom: 2px solid #FFF;
+}
+footer .footer-container p {
+  width: 60%;
+  align-self: flex-end;
+}
+
+@media screen and (max-width: 600px) {
+  .rellenito {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+  }
+  .cuadrado-container {
+    left: auto;
+    top: auto;
+    flex-direction: column;
+  }
+  .cuadrad, .cuadrado2, .cuadrado3, .cuadrado4 {
+    width: 8rem;
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */

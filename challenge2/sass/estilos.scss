@@ -1,13 +1,108 @@
 @import '-variables.scss';
+*{
+    font-size: $rem;
+}
 @import '-header.scss';
 
 // estilos main 
 .nino-container{
-    width: 80vw;
-    height: 40vh;
-    & .nino{
-        background-image: url('https://media.istockphoto.com/id/1175092840/es/foto/chica-feliz-en-clase-en-la-escuela-con-un-grupo-de-estudiantes.jpg?s=612x612&w=0&k=20&c=qR8MhTDpEG53Wl7SaAOiJss_MjRNIhjFzdFfMYVwc8Y=');
-       
+    width: 20rem;
+    height: 20rem;
+    & img{
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+        box-shadow: 2rem 3rem 10px $rosa, 3rem 4rem 10px $yellow;
+    }
     
+}
+.mainsito{
+    display: flex;
+
+}
+.encabezado{
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    justify-content: center;
+    align-items: center;
+}
+.cuadrad{
+    background-color: $skyBlue;
+    width: 6rem;
+    height: 6rem;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $White;
+    font-weight: bold;
+    & ion-icon{
+        font-size: 30px;
+    }
+    & a{
+        text-decoration: none;
+        color: $White;
+        
+    }
+}
+.cuadrado2{
+    @extend .cuadrad;
+    background-color: $yellow;
+}
+.cuadrado3{
+    @extend .cuadrad;
+    background-color: $rosa;
+}
+.cuadrado4{
+    @extend .cuadrad;
+    background-color: $darkBlue;
+}
+.cuadrado-container{
+    display: flex;
+    position: relative;
+    left: 20rem;
+    top: -3rem;
+
+    
+}
+// Foooter 
+footer{
+    background-color: $skyBlue;
+    color: $White;
+    height: 20rem;
+    & .footer-container{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        & h1{
+            border-bottom: 2px solid $White;
+}
+        & p{
+           
+            width: 60%;
+            align-self: flex-end;
+        }
+    }
+}
+@media screen and (max-width: 600px) {
+    body{
+        // background-color: red;
+    }
+    .rellenito{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 2rem 0;
+    }
+    .cuadrado-container{
+        left: auto;
+        top: auto;
+        flex-direction: column;
+
+    }
+    .cuadrad{
+        width: 8rem;
     }
 }
